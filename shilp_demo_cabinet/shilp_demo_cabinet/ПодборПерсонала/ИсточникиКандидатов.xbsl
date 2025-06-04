@@ -1,0 +1,38 @@
+
+@ВПроекте
+@НаКлиенте
+метод Логотип(): ДвоичныйОбъект.Ссылка
+    выбор этот
+    когда Avito
+        возврат Ресурс{Логотипы/Avito.png}.Ссылка
+    когда HeadHunter
+        возврат Ресурс{Логотипы/HeadHunter.png}.Ссылка
+    когда RabotaRu
+        возврат Ресурс{Логотипы/RabotaRu.png}.Ссылка
+    когда SuperJob
+        возврат Ресурс{Логотипы/SuperJob.png}.Ссылка
+    когда ZarplataRu
+        возврат Ресурс{Логотипы/ZarplataRu.png}.Ссылка
+    иначе
+        возврат Ресурс{Логотипы/HR.png}.Ссылка
+    ;
+;
+
+@ВПроекте
+@НаКлиенте
+метод Гиперссылка(): Строка
+    выбор этот
+    когда Avito
+        возврат "https://www.avito.ru/"
+    когда HeadHunter
+        возврат "https://hh.ru/"
+    когда RabotaRu
+        возврат "https://www.rabota.ru/"
+    когда SuperJob
+        возврат "https://www.superjob.ru/"
+    когда ZarplataRu
+        возврат "https://www.zarplata.ru/"
+    иначе
+        возврат ""
+    ;
+;

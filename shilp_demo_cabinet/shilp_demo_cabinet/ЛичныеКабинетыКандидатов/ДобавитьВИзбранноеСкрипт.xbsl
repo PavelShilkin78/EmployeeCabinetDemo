@@ -1,0 +1,68 @@
+импорт Компания
+импорт ИнтерфейсныеКомпонентыСтандартные
+
+метод ДобавитьВИзбранноеСкриптСодержимое(): Строка
+    знч СтильИмпортаRoboto = ИнтерфейсныеКомпоненты.СтильИмпортаRoboto()
+    возврат 
+        "<table width='100%'>
+            <tr>
+                <td align='center'>
+                    <button onclick='AddToBookmark(this)' class='refButton'>Добавить в избранное</button>
+                </td>
+            </tr>
+        </table>
+        %СтильИмпортаRoboto
+        <style>
+            .refButton {
+                border: none;
+                font-family: Roboto, sans-serif;
+                font-size: large;
+                cursor: pointer;
+                border-radius: 8px;
+                padding: 8px 16px;
+                background-color: lightgray;
+            }
+        </style>
+        <script type='text/javascript'>
+            function AddToBookmark(a)
+            {
+                var title = '%{ЗаголовокЗакладки()}'; 
+                var url = window.document.location; 
+                
+                if (window.sidebar) {  // Gecko
+                    window.sidebar.addPanel(title, url, ''); 
+                }
+                else if (typeof(opera)=='object') { // Opera
+                    a.rel='sidebar'; 
+                    a.title=title; 
+                    a.url=url; 
+                    return true; 
+                }
+                else if(document.all) {  // IE
+                    window.external.AddFavorite(url, title); 
+                }
+                else {
+                    alert('Для добавления в Избранное нажмите Ctrl+D'); // для всех остальных браузеров, в т.ч. Chrome
+                }
+                
+                return false;
+            }
+        </script>
+        "    
+;
+
+@НаСервере @ДоступноСКлиента
+статический метод ЗаголовокЗакладки(): Строка
+    знч Запрос = Запрос{
+        Выбрать
+            Наименование
+        Из
+            Компания::ОписаниеРаботодателя
+    }        
+    пер ПредставлениеРаботодателя: Строка
+    исп РезультатЗапроса = Запрос.Выполнить()
+    для СтрокаРезультата из РезультатЗапроса
+        ПредставлениеРаботодателя = СтрокаРезультата.Наименование    
+    ;
+    возврат "Мой кабинет кандидата (%ПредставлениеРаботодателя)"
+;

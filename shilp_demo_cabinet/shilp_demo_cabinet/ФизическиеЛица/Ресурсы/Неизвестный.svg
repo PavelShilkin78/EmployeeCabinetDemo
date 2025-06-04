@@ -1,0 +1,7 @@
+<svg viewBox="0 0 120 120" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		.heavy { font: bold 68px Roboto, sans-serif; fill: white}
+	</style>
+	<ellipse cx="60" cy="60" rx="60" ry="60" fill="lightgray"/>
+	<text x="44" y="85" class="heavy">?</text>
+</svg>

@@ -1,0 +1,61 @@
+[{
+    "ID": "89b6d8c4-10dc-47c4-a247-c2a25e0cb74a",
+    "code": "AZN",
+    "abbr": "₼",
+    "name": "Манаты"
+}, 
+{
+    "ID": "3714d141-ea29-4287-81fb-1e07ca5cd944",
+    "code": "BYR",
+    "abbr": "Br",
+    "name": "Белорусские рубли"
+}, 
+{
+    "ID": "0e28005d-fde6-463d-9aee-aebb53c059d0",
+    "code": "EUR",
+    "abbr": "€",
+    "name": "Евро"
+}, 
+{
+    "ID": "8095b827-52dd-4e9b-863f-9731358c5fa3",
+    "code": "GEL",
+    "abbr": "₾",
+    "name": "Грузинский лари"
+}, 
+{
+    "ID": "dca9a690-7788-48d7-b99a-8f0d8559e750",
+    "code": "KGS",
+    "abbr": "сом",
+    "name": "Кыргызский сом"
+}, 
+{
+    "ID": "ff3a0964-cff8-4ff7-903a-9ef58b5725ec",
+    "code": "KZT",
+    "abbr": "₸",
+    "name": "Тенге"
+}, 
+{
+    "ID": "4ab89775-7802-4457-9983-bf3f7be45a26",
+    "code": "RUR",
+    "abbr": "₽",
+    "name": "Рубли"
+}, 
+{
+    "ID": "728445e7-9b45-4d98-87bb-c43898349f2c",
+    "code": "UAH",
+    "abbr": "₴",
+    "name": "Гривны"
+    
+}, 
+{
+    "ID": "20f01772-ae6e-44ef-b9ff-0ed6d2a7f977",
+    "code": "USD",
+    "abbr": "$",
+    "name": "Доллары"
+}, 
+{
+    "ID": "fc36d981-1df3-4d2b-9dc5-43bdaa6fcdde",
+    "code": "UZS",
+    "abbr": "so'm",
+    "name": "Узбекский сум"
+}]
